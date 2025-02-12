@@ -1,0 +1,13 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build outputs
+build/
+
+# Development files
+project.md
+build.py
+
+# macOS system files
+.DS_Store
