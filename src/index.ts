@@ -14,7 +14,7 @@ const SERVER_CONFIG = {
 const TOOLS = {
   directory_structure: {
     name: "directory_structure",
-    description: "Get the directory structure of a repository, use the workspace path, don't use '.'",
+    description: "Get the directory structure of a repository, use the workspace path (/Users/ubuntu/projects/repomix)",
     parameters: {
       path: z.string().describe("Path to the repository to get the directory structure of")
     },
