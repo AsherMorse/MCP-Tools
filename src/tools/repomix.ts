@@ -15,7 +15,7 @@ type RepomixResult = {
 // Main handler for full repomix output
 export const repomixGenerate = async (params: RepomixParams, _extra: any): Promise<RepomixResult> => {
   try {
-    const result = execSync(`cd "${params.path}" && npx repomix --style markdown --no-file-summary --remove-comments --remove-empty-lines -o project.md`).toString().trim();
+    const result = execSync(`cd "${params.path}" && npx repomix --style plain --no-file-summary --remove-comments --remove-empty-lines -o project.txt`).toString().trim();
 
     return {
       content: [
